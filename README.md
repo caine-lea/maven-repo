@@ -25,14 +25,14 @@ maven repo for core-ng
    2. right-click 'Reload from Disk' in 'Project' tab
    3. open 'Commit' tab
    4. check all Changes and Unversioned Files
-   5. Commit and Push
+   5. commit and push
 5. publish GitHub Pages from a branch
    1. visit https://github.com/caine-lea/maven-repo/settings
    2. click 'Pages' tab in sidebar
    3. deploy from master/(root)
    4. wait a moment for taking effect
    5. refresh the page
-6. modify maven repo
+6. modify maven repo url
    ```
    subprojects {
        group = 'core.demo'
