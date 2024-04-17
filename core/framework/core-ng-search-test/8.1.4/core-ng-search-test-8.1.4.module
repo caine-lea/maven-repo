@@ -1,0 +1,138 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "core.framework",
+    "module": "core-ng-search-test",
+    "version": "8.1.4",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.1.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "core-ng-search-test-8.1.4.jar",
+          "url": "core-ng-search-test-8.1.4.jar",
+          "size": 12566,
+          "sha512": "3f67742738104b98302ed40413ac107b39a0c157a2785ac81c18d9381f9dd42325f67e9fc60406d4ae993589bd852496523bab3c0e1d42c5c0afe8ac3fef4550",
+          "sha256": "3c28fd1d3090f917d06235f12933111f2f4584d5696659e14e5b388815bf4f26",
+          "sha1": "f599879ee3d03e330ba7719b9fd526d6d891d697",
+          "md5": "32c175c19b6412c1e4954a9a90a0cc7f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "core.framework",
+          "module": "core-ng-test",
+          "version": {
+            "requires": "8.1.4"
+          }
+        },
+        {
+          "group": "core.framework",
+          "module": "core-ng-search",
+          "version": {
+            "requires": "8.1.4"
+          }
+        },
+        {
+          "group": "org.elasticsearch",
+          "module": "elasticsearch",
+          "version": {
+            "requires": "8.8.1"
+          }
+        },
+        {
+          "group": "core.framework.elasticsearch.module",
+          "module": "transport-netty4",
+          "version": {
+            "requires": "8.8.1"
+          }
+        },
+        {
+          "group": "core.framework.elasticsearch.module",
+          "module": "mapper-extras",
+          "version": {
+            "requires": "8.8.1"
+          }
+        },
+        {
+          "group": "core.framework.elasticsearch.module",
+          "module": "lang-painless",
+          "version": {
+            "requires": "8.8.1"
+          }
+        },
+        {
+          "group": "core.framework.elasticsearch.module",
+          "module": "analysis-common",
+          "version": {
+            "requires": "8.8.1"
+          }
+        },
+        {
+          "group": "core.framework.elasticsearch.module",
+          "module": "reindex",
+          "version": {
+            "requires": "8.8.1"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "core-ng-search-test-8.1.4.jar",
+          "url": "core-ng-search-test-8.1.4.jar",
+          "size": 12566,
+          "sha512": "3f67742738104b98302ed40413ac107b39a0c157a2785ac81c18d9381f9dd42325f67e9fc60406d4ae993589bd852496523bab3c0e1d42c5c0afe8ac3fef4550",
+          "sha256": "3c28fd1d3090f917d06235f12933111f2f4584d5696659e14e5b388815bf4f26",
+          "sha1": "f599879ee3d03e330ba7719b9fd526d6d891d697",
+          "md5": "32c175c19b6412c1e4954a9a90a0cc7f"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "core-ng-search-test-8.1.4-sources.jar",
+          "url": "core-ng-search-test-8.1.4-sources.jar",
+          "size": 7115,
+          "sha512": "5d88116927e7329db6d7ba9c7b70b164f52d73ad10f35bcecbfca9673a7adf79eac3238243d5c7e9918dc584bbbbbcc060ae8669745bdf17738946b0dae1c3bf",
+          "sha256": "326206d4d87330a9958a7ed2caffcdb1db592a5074145155ec9f25d10b6d7594",
+          "sha1": "144d8de8f9b221b117aa4eaa583e87cb8d5b7354",
+          "md5": "f575704d7b5f32ecb393c14f63b39e69"
+        }
+      ]
+    }
+  ]
+}
