@@ -33,7 +33,7 @@ maven repo for core-ng
    4. wait a moment for taking effect
    5. refresh the page
 6. modify maven repo url
-   ```
+   ```build.gradle
    subprojects {
        group = 'core.demo'
        version = '1.0.0'
