@@ -16,7 +16,6 @@ maven repo for core-ng
    cd /c/Caine/Code/caine-lea/core-ng-project/
    ./gradlew -PmavenURL=/c/Caine/Code/caine-lea/maven-repo clean publish
    ```
-
    ```PowerShell
    cd C:\Caine\Code\caine-lea\core-ng-project\
    .\gradlew -PmavenURL=C:\Caine\Code\caine-lea\maven-repo clean publish
@@ -26,43 +25,26 @@ maven repo for core-ng
    2. right-click 'Reload from Disk' in 'Project' tab
    3. open 'Commit' tab
    4. check all Changes and Unversioned Files
-   5. Commit
- 
-
-
-
-
-1. install JDK 11
-2. set JAVA_HOME environment variable
-3. use JDK 11 as the project SDK
-4. create a new folder (maven-repo)
-5. to publish the package, run the below commands
-6. 
-7. 
-
-
-
-6. commit and push /maven-repo
-7. visit https://github.com/food-truck/core-ng-for-test-executor/settings/pages
-8. deploy from master
-9. refresh the page
-10. copy the URL of this repo (https://food-truck.github.io/core-ng-for-test-executor/)
-
-# How to use this repo?
-https://food-truck.github.io/core-ng-for-test-executor/maven-repo
-
-<pre>
-subprojects {
-    group = 'core.demo'
-    version = '1.0.0'
-
-    repositories {
-        maven {
-            url 'https://food-truck.github.io/core-ng-for-test-executor/maven-repo/'
-            content {
-                includeGroupByRegex 'core\\.framework.*'
-            }
-        }
-    }
-}
-</pre>
+   5. Commit and Push
+5. publish GitHub Pages from a branch
+   1. visit https://github.com/caine-lea/maven-repo/settings
+   2. click 'Pages' tab in sidebar
+   3. deploy from master/(root)
+   4. wait a moment for taking effect
+   5. refresh the page
+6. modify maven repo
+   ```
+   subprojects {
+       group = 'core.demo'
+       version = '1.0.0'
+   
+       repositories {
+           maven {
+               url 'https://caine-lea.github.io/maven-repo/'
+               content {
+                   includeGroupByRegex 'core\\.framework.*'
+               }
+           }
+       }
+   }
+   ```
